@@ -1,7 +1,8 @@
 <?
 header('Content-type: application/json');
-$dbh = new PDO('mysql:host=localhost;dbname=eve', 'eve', 'eve');
 
+
+$dbh = new PDO('mysql:host=localhost;dbname=dbname', 'shares', 'password');
 
 $sql="select * from balance order by id desc";
 $stmt = $dbh->prepare($sql);
